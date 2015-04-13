@@ -1,0 +1,70 @@
+public class Instanc {
+	
+	private String color;
+	private double engineSize;
+	private double hp;
+	private String brand;
+	private static int count;
+	
+	public Instanc() {
+		this.color = "Black";
+		this.hp = 435;
+		this.engineSize = 5.0;
+		this.brand = "Ford Mustang";
+		
+	}
+	
+	public Instanc(String color, double hp, double engineSize, String brand) {
+		this.color = color;
+		this.hp = hp;
+		this.engineSize = engineSize;
+		this.brand = brand;
+	}
+	
+	public boolean equals(Instanc object) {
+		return (this.color == object.color) && (this.hp == object.hp) && (this.engineSize == object.engineSize) && (this.brand == object.brand);
+	}
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public String getColor() {
+		return this.color;
+		
+	}
+	
+	public void setHorsePower(double hp) {
+		this.hp = hp;
+	}
+	
+	public double getHP() {
+		return this.hp;
+	}
+	
+	public void setEngineSize(double engineSize) {
+		this.engineSize = engineSize;
+	}
+	
+	public double getEngineSize() {
+		return this.engineSize;
+	}
+	
+	public void setMake(String brand) {
+		this.brand = brand;
+	}
+	
+	public String getMake() {
+		return this.brand;
+	}
+	
+	public static int getCount() {
+		return count;
+	}
+
+	public String toString() {
+		return "You customized a " + this.color + " " + this.brand + " with a horse power of " + this.hp
+				+ " HP "  + " and a engine size of " + this.engineSize + " L" + "."; 
+	}
+	
+
+}
